@@ -1588,7 +1588,7 @@ margin-top: 5px;
 .formsect {
     display: block;
     position: relative;
-    height: 95%;
+    height: 91%;
     margin: 0 auto;
     border: none;
     outline: none;
@@ -2015,6 +2015,12 @@ h3 {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
 }
+
+.formsect {
+    display: block;
+    position: relative;
+    height: 90%;
+  }
 .obtextwrap {
     position: relative;
     height: 100%;
