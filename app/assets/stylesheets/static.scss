@@ -1196,9 +1196,10 @@ width: 100%;
   background-color: black;
   top: 0;
   left: 0;
-  background-image: image-url("blackpattern.jpg");
-  background-position: bottom;
-  background-size: cover;
+  // background-image: image-url("blackpattern.jpg");
+  // background-position: bottom;
+  // background-size: cover;
+  background-color: #F5F5F6;
 }
 .cnav {
   position: absolute;
@@ -1598,6 +1599,7 @@ margin-top: 5px;
 }
 .longsect {
     height: 130px;
+    margin-bottom: 30px;
 }
 
 .forminfotext {
@@ -1962,6 +1964,16 @@ h3 {
 
 }
 
+@media (max-width: 1020px) {
+  .cslow {
+  position: absolute;
+  width: 90%;
+  height: 50%;
+  }
+
+}
+
+
 @media (max-width: 900px) {
   .nav {
     display: none;
@@ -2137,22 +2149,173 @@ h3 {
   font-size: 15px;
 }
 
+.cotherback {
+    position: relative;
+    height: 1900px;
+    width: 100%;
+    background-color: #F5F5F6;
+}
+.cotherboxwrap {
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    white-space: normal;
+    margin-top: 60px;
+}
+.cboxleft {
+    position: relative;
+    display: block;
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+.cboxright {
+    position: relative;
+    display: block;
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.cotherbacklimit {
+    position: relative;
+    height: 80%;
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 
 
+}
+
+
+
+
+@media (max-width: 805px) {
+
+.cmainbacklimit {
+    position: absolute;
+    height: auto;
+    width: 900px;
+    max-width: 90%;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+}
+}
 @media (max-width: 735px) {
 .quotebox {
     width: 93%;
 }
+
+.csupperhalflimit h1 {
+    font-size: 60px;
+    letter-spacing: 3px;
+}
+.csupperhalf {
+   top: 110px;
+}
+
+.cmainback {
+    position: relative;
+    height: 900px;
+    width: 100%;
+}
+
+
+
+
+
+.cboxleft {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+.cboxright {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.contactback {
+    position: relative;
+    width: 100%;
+    height: 1700px;
+}
+
+.contactcontent {
+    position: relative;
+    width: 100%;
+    height: 80%;
+  }
+  .contactleft {
+      position: relative;
+      width: 100%;
+      height: 50%;
+      left: 0;
+      top: 0;
+  }
+  .contactright {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    right: auto;
+    left: 0;
+    top: 0;
+}
+
+
+
+
+
 
 }
 @media (max-width: 560px) {
  .cardwrap {
    padding-top: 50px;
  }
+
+ .csupperhalflimit h1 {
+     font-size: 50px;
+     letter-spacing: 1px;
+ }
+ .csupperhalf {
+
+    top: 130px;
 }
 
+
+.smlimit {
+    width: 100%;
+}
+.contactinnerlimit {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+}
 @media (max-width: 525px) {
   .tbbase {
     height: auto;
@@ -2213,6 +2376,39 @@ h3 {
    display: none;
  }
 
+ .cboxinner {
+     width: 100%;
+     height: 100%;
+ }
+ .cboxleft {
+     height: 40%;
+ }
+ .cboxright {
+     height: 40%;
+ }
+
+
+
+ .cotherboxwrap {
+     position: relative;
+     width: 100%;
+     height: 900px;
+     white-space: normal;
+     margin-top: 60px;
+ }
+ .cotherback {
+    position: relative;
+    height: 1400px;
+  }
+
+  .cviewall {
+      position: absolute;
+      padding: 25px 90px;
+      border: 1px solid black;
+      font-family: "cera";
+      font-size: 16px;
+      font-weight: bold;
+    }
 
 
 }
@@ -2233,10 +2429,27 @@ h3 {
     color: white;
 }
 
+.cmainback {
+    position: relative;
+    height: 1200px;
+    width: 100%;
+}
+
 
 
 
 }
+
+
+@media (max-width: 500px) {.cslow {
+position: absolute;
+width: 100%;
+height: 50%;
+}
+}
+
+
+
 @media (max-width: 400px) {
   .bookbtn {
    bottom: -10%;
@@ -2249,6 +2462,10 @@ h3 {
   .midback {
       height: 2920px;
   }
+  .csupperhalflimit h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+}
 
 }
 @media (max-width: 345px) {
