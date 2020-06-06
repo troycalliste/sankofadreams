@@ -147,7 +147,7 @@ ul {
   float: left;
   width: 45%;
   height: 100%;
-  background-image: image-url("earl.jpg");
+  background-image: image-url("harriet.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -274,6 +274,20 @@ ul {
  height: 100%;
  float: left;
 
+ }
+ .obg {
+ background-image: image-url("be2");
+ background-position: top;
+
+ }
+ .twbg {
+ background-image: image-url("be3");
+ background-position: 50% calc(50% + 100px);
+ float: right;
+ }
+ .thbg {
+ background-image: image-url("be1");
+ background-position: top;
  }
 
  .halfcontain {
@@ -404,7 +418,7 @@ ul {
 }
 .latestback {
   position: relative;
-  height: 900px;
+  height: 1100px;
   width: 100%;
   -webkit-box-shadow: 0px 15px 20px -20px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 15px 20px -20px rgba(0,0,0,0.75);
@@ -657,19 +671,6 @@ p {
 .lm {
   top: 15px;
 }
-.obg {
-background-image: image-url("be2");
-background-position: top;
-
-}
-.twbg {
-background-image: image-url("be3");
-background-position: 50% calc(50% + 100px);
-}
-.thbg {
-background-image: image-url("be1");
-background-position: top;
-}
 
 
 
@@ -711,8 +712,9 @@ background-position: top;
 }
 .smalltitle {
   position: relative;
- height: 10px;
+ height: auto;
  width: 100%;
+ margin-bottom: 30px;
 
 }
 .smalltitle p {
@@ -726,7 +728,7 @@ background-position: top;
   height: 3px;
   width: 70px;
   background-color: #f8a88b;
-  margin-top: 30px;
+
 }
 .largetitle {
   position: relative;
@@ -890,16 +892,21 @@ width: 100%;
   white-space: nowrap;
 }
 .cwleft {
-  position: relative;
+  position: absolute;
   display: inline-block;
   height: 100%;
   width: 45%;
+  left: 0;
+  top: 0;
+  white-space: normal;
 }
 .cwright {
-  position: relative;
+  position: absolute;
   display: inline-block;
   height: 100%;
   width: 55%;
+  right: 0;
+  top: 0;
   white-space: nowrap;
 }
 .leftcardwrap {
@@ -1638,11 +1645,625 @@ margin-top: 5px;
 .social {
   font-size: 20px;
 }
-
-
 h3 {
   margin-block-start: 0em;
   margin-block-end: 0em;
 }
+.mobilenav {
+  display: none;
+  position: fixed;
+  height: 87px;
+  width: 100%;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: 0.5s all ease-in-out;
+  -moz-transition: 0.5s all ease-in-out;
+  -o-transition: 0.5s all ease-in-out;
+  // background-color: white;
+  background-color: white;
+}
+.nov {
+  overflow: hidden;
+}
+////////////////////////////////////////////////mobile
+@media (max-width: 1300px) {
+.deptbox {
+    position: relative;
+    width: 100%;
+   }
+  }
+
+@media (max-width: 1200px) {
+  .navlimit {
+     width: 100%;
+ }
+
+ .latestlimit {
+   width: 90%;
+ }
+ .lateblock {
+   display: none;
+    width: 100%;
+    height: 100%;
+    float: none;
+ }
+ .firstblock {
+   display: block;
+ }
+ .datebox {
+   margin: 0 auto;
+ }
+
+
+
+}
+
+@media (max-width: 1100px) {
+.fourback {
+    position: relative;
+    height: 900px;
+    }
+.fourlimit {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    white-space: wrap;
+  }
+
+  .fourhalfl, .fourhalf {
+    position: relative;
+    display: block;
+    float: none;
+    width: 100%;
+    height: 45%;
+    margin-bottom: 20px;
+}
+
+
+
+.infocardback {
+    position: relative;
+    height: 1300px;
+    width: 100%;
+}
+.plainwrap {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+}
+
+.cwleft {
+    position: relative;
+    display: block;
+    height: 45%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.cwright {
+    position: relative;
+    display: block;
+    height: 45%;
+    width: 100%;
+    right: auto;
+    top: auto;
+    white-space: nowrap;
+}
+.leftcardwrap {
+    position: relative;
+    display: block;
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+}
+.rightcardwrap {
+    position: relative;
+    display: block;
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cr {
+    position: relative;
+    height: 230px;
+    width: 100%;
+    background-color: blue;
+    margin-bottom: 20px;
+  }
+.cardtwo {
+  bottom: auto;
+}
+.cardthree {
+    top: 0;
+    left: 0;
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+  }
+
+  .cardicon {
+      position: relative;
+      left: 24px;
+      top: 24px;
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      background-color: white;
+      margin-bottom: 20px;
+  }
+  .cardtext {
+    position: relative;
+    left: 0;
+    bottom: auto;
+    width: 100%;
+    height: auto;
+}
+
+.cwlimit {
+    position: relative;
+    width: 90%;
+    max-width: 90%;
+    height: 100%;
+    max-height: 900px;
+    top: 0%;
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    margin: 0 auto;
+    white-space: nowrap;
+}
+
+
+.cardtextlimit {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    white-space: normal;
+    margin: 0 auto;
+}
+
+.introback {
+  padding-bottom: 100px;
+}
+.workback {
+  height: auto;
+}
+.workupper {
+    background-color: white;
+    background-image: linear-gradient(#8DA48F, white);
+    height: 550px;
+ }
+ .worklower {
+    background-color: white;
+    height: 1000px;
+}
+ .workimg {
+   display: none;
+ }
+ .lwhigh {
+     position: relative;
+     width: 100%;
+     height: 500px;
+     border-top: 1px solid rgba(255, 255, 255, 0.3);
+     white-space: nowrap;
+ }
+ .lwlow {
+    position: relative;
+    width: 100%;
+    height: 500px;
+  }
+ .wrkintroinner {
+    position: relative;
+    width: 50%;
+    height: auto;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    margin: 0 auto;
+}
+.workbox {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: calc(100% / 3);
+    margin: 0;
+    margin-right: -4px;
+}
+.workbox h1 {
+  position: relative;
+    font-size: 35px;
+    line-height: normal;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+  }
+  .lwlow {
+    border: none;
+  }
+.insmalltitle {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.indeptbar {
+  margin: 0 auto;
+}
+.inlargetitle {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .intexttitle {
+    position: relative;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .ctaback {
+      height: 700px;
+      width: 100%;
+      padding-bottom: 100px;
+  }
+
+
+.workback {
+  margin-bottom: 50px;
+}
+.bookwrap {
+  width: 143px;
+}
+.bookbtn {
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  bottom: 22%;
+}
+  .ctaright {
+      position: absolute;
+      display: inline-block;
+      width: 100%;
+      height: 50%;
+      top: 0;
+      right: 0;
+  }
+
+  .ctaleft {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    top: auto;
+    left: 0;
+}
+
+}
+
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+  .mobilenav {
+    display: block;
+  }
+  .topbackcontent {
+    margin-top: 0;
+    padding-top: 240px;
+    width: 90%;
+}
+.oneback {
+    width: 100%;
+  }
+
+.onestickbottom {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    left: 0;
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.deptbox {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.obtextwrap {
+    position: relative;
+    height: 100%;
+    width: 90%;
+}
+
+.midwrap {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    white-space: wrap;
+}
+.midpic {
+    display: block;
+    width: 100%;
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: none;
+}
+
+.midhalf {
+    display: block;
+    width: 100%;
+    height: 50%;
+    float: none;
+}
+.midback {
+    position: relative;
+    height: 1900px;
+    width: 100%;
+}
+
+.threeback {
+  display: none;
+}
+
+
+.footer {
+    position: relative;
+    height: auto;
+  }
+
+  .footlist li {
+      width: 100%;
+      display: block;
+      float: left;
+      height: auto;
+      font-family: sans-serif;
+      font-size: 13px;
+      color: white;
+      padding: 10px;
+      text-transform: uppercase;
+  }
+
+
+  .footerlimit {
+      position: relative;
+      height: auto;
+      top: 0;
+      padding-top: 50px;
+}
+.footerpart {
+    // position: relative;
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .ulwrap {
+    height: 100%;
+    // padding: 500px 0px;
+}
+.rightwh {
+  border: none;
+}
+.footlist {
+    position: relative;
+    height: 80%;
+    // white-space: nowrap;
+}
+
+.centerp {
+  top: 0;
+  width: 95%;
+  height: auto;
+  transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    padding: 30px 0;
+}
+
+.centerp p {
+  margin-bottom: 10px;
+}
+.space {
+  height: auto;
+}
+.lm {
+  top: 0;
+}
+
+
+.deptbox {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.bookbtn {
+  bottom: 0%;
+}
+.ctaback {
+  padding-bottom: 150px;
+}
+.mobileicon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  left: 30px;
+  color: black;
+  font-size: 15px;
+}
+
+}
+
+
+
+@media (max-width: 735px) {
+.quotebox {
+    width: 93%;
+}
+
+}
+@media (max-width: 560px) {
+ .cardwrap {
+   padding-top: 50px;
+ }
+}
+
+@media (max-width: 525px) {
+  .tbbase {
+    height: auto;
+    font-size: 35px;
+}
+.tblower {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+}
+.topbackcontent {
+  padding-top: 200px;
+}
+.quoteinner {
+  height: 93%;
+}
+.quotebox {
+    height: 800px;
+}
+.quotewrap {
+    position: relative;
+    height: 1150px;
+  }
+
+.quotepic {
+    position: relative;
+    display: block;
+    float: none;
+    width: 100%;
+    height: 65%;
+    margin-bottom: 20px;
+  }
+
+  .quotetextbox {
+    position: relative;
+    display: inline-block;
+    float: none;
+    width: 100%;
+    height: 35%;
+}
+
+.midwrap {
+  height: 800px
+}
+.midback {
+    height: 2500px;
+}
+
+.footerpart {
+    // position: relative;
+    display: block;
+    float: none;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+ .righttitle {
+   display: none;
+ }
+
+
+
+}
+
+
+@media (max-width: 445px) {
+.innertextwrap {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+.cardtext h3 {
+    padding-top: 20px;
+    font-size: 22px;
+    font-family: "cerabold";
+    color: white;
+}
+
+
+
+
+}
+@media (max-width: 400px) {
+  .bookbtn {
+   bottom: -10%;
+  }
+}
+@media (max-width: 370px) {
+  .midwrap {
+    height: 940px
+  }
+  .midback {
+      height: 2920px;
+  }
+
+}
+@media (max-width: 345px) {
+  .fourhead {
+      position: relative;
+      top: 0px;
+    }
+    .fourtext {
+    position: relative;
+    top: 50px;
+  }
+
+
+}
+
+
 
 // end
