@@ -1,0 +1,158 @@
+<div class="wrap">
+
+  <div class="nav noov">
+
+    <div class="navlimit">
+      <div class="logowrap"><%= image_tag("sankofalogo.png") %></div>
+      <ul class="navlist">
+        <li>Shop</li>
+        <li>Departments</li>
+        <li>Events</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </div>
+<div class="deptback noov">
+  <div class="deptinner">
+     <div class="deptbox">
+       <div class="smalltitle"><p>Contact Us</p></div>
+       <div class="deptbar"></div>
+       <div class="largetitle"><h3>Get in touch with us.</h3>
+       </div>
+       <div class="texttitle margint"><p>Contact us now for your free book or any questions you may have.</p></div>
+
+     </div>
+  </div>
+  <div class="downarrow"></div>
+</div>
+
+
+<div class="contactback">
+  <div class="contactlimit">
+    <div class="contactcontent">
+    <div class="contactleft">
+      <div class="contactinnerlimit smlimit">
+        <%= form_with(model: @inquiry, local: true) do |form| %>
+       <div class="formtext">Your Name (required) </div>
+       <div class="formsectwrap">
+        <%= form.text_field :name, class: "formsect", required: "required" %>
+        </div>
+        <div class="formtext">Your Email (required)</div>
+        <div class="formsectwrap">
+        <%= form.text_field :email, class: "formsect", required: "required" %>
+        </div>
+        <div class="formtext">Subject</div>
+        <div class="formsectwrap">
+        <%= form.email_field :subject, class: "formsect", placeholder: "Free Book", required: "required" %>
+        </div>
+        <div class="formtext">Message (optional)</div>
+        <div class="formsectwrap  longsect">
+        <%= form.text_area :message, class: "formsect", required: "required" %>
+        </div>
+        <button type="submit" class="inqbtn">
+           <i class="far fa-file-alt"></i> &nbsp;&nbsp;BOOK YOUR EVENT
+        </button>
+        <% end %>
+      </div>
+    </div>
+    <div class="contactright">
+      <div class="contactinnerlimit">
+        <div class="forminfotext margint">
+          <p>
+            If you would like to discuss how we can work together to create
+            wealth for you and your family, please do not hesistate
+            to complete the inquiry form (below) or send us an email at <a href="mailto:enquiries@sankofadreams@yahoo.com">sankofadreams@yahoo.com</a>.
+          </p>
+        </div>
+
+        <div class="forminfotext margint">
+          <p>
+            For all Sankofa Dreams inquiries please contact <a href="mailto:enquiries@sankofadreams@yahoo.com">sankofadreams@yahoo.com</a>.
+          </p>
+        </div>
+
+        <div class="formdulltext lmargint">
+          <p>
+            Our Location
+          </p>
+        </div>
+        <div class="forminfotext smargint">
+          <p>
+            Atlanta, GA
+          </p>
+        </div>
+        <div class="formdulltext lmargint">
+          <p>
+            Call Us
+          </p>
+        </div>
+        <div class="forminfotext smargint sns">
+          <p>
+            (678) 786-2938
+          </p>
+        </div>
+        <div class="formdulltext lmargint">
+          <p>
+            Connect
+          </p>
+        </div>
+        <div class="forminfotext smargint social">
+          <i class="fab fa-instagram"></i> &nbsp; <i class="fab fa-facebook-square"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+</div>
+
+
+<div class="footer noov">
+  <div class="footerlimit">
+    <div class="footerpart">
+      <div class="ulwrap ">
+      <ul class="footlist rightwh">
+        <li>About Us</li>
+        <li>Meet the Team</li>
+        <li>Our Community</li>
+        <li>Privacy Policy</li>
+        <li>Terms</li>
+      </ul>
+    </div>
+    </div>
+    <div class="footerpart">
+      <div class="ulwrap">
+      <div class="fcb">Facebook Feed</div>
+    </div>
+    </div>
+    <div class="footerpart">
+      <div class="ulwrap">
+        <div class="fcb">Contact</div>
+        <div class="fcbinfo">Location and Phone number</div>
+      </div>
+    </div>
+    <div class="footerpart">
+      <div class="ulwrap">
+        <div class="fcb">Connect with us </div>
+        <div class="fcbinfo">
+          <span>facebook.com/sankofadreans</span><br>
+          <br>
+          <span>@sankofadreans2020</span><br>
+          <br>
+          <span>Subscribe to RSS</span><br>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="space noov">
+  <div class="centerp">
+  <p>2020 © Sankofa Dreams. All Rights Reserved.</p>
+  <p class="lm">Sankafo Dreams is a company geared toward building wealth in the black community.</p>
+  </div>
+</div>
+
+</div>
