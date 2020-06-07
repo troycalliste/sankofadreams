@@ -70,6 +70,9 @@ html, body {
   text-transform: uppercase;
   font-family: "cerabold", sans-serif;
 }
+.navlist li:hover {
+  color: #f8a88b;
+}
 .mobileimg {
   position: relative;
   width: 80px;
@@ -1086,7 +1089,7 @@ background-image: image-url("iconthree.png");
   margin: 0 auto;
 }
 .wrkintroinner {
-  position: absolute;
+  position: relative;
   width: 50%;
   height: auto;
   left: 50%;
@@ -1978,7 +1981,7 @@ h3 {
 
 .infocardback {
     position: relative;
-    height: 1300px;
+    height: 1500px;
     width: 100%;
 }
 .plainwrap {
@@ -1997,7 +2000,7 @@ h3 {
 .cwleft {
     position: relative;
     display: block;
-    height: 45%;
+    height: 50%;
     width: 100%;
     left: 0;
     top: 0;
@@ -2081,7 +2084,7 @@ h3 {
     width: 90%;
     max-width: 90%;
     height: 100%;
-    max-height: 900px;
+    max-height: 90%;
     top: 0%;
     transform: translateY(0%);
     -webkit-transform: translateY(0%);
@@ -2144,7 +2147,7 @@ h3 {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    margin: 0 auto;
+    // margin: 0 auto;
 }
 .workbox {
     position: relative;
@@ -2241,6 +2244,9 @@ h3 {
 
 @media (max-width: 900px) {
   .nav {
+    display: none;
+  }
+  .righttitle {
     display: none;
   }
   .mobilenav {
@@ -2658,9 +2664,7 @@ h3 {
     margin: 0 auto;
     margin-bottom: 20px;
   }
- .righttitle {
-   display: none;
- }
+
 
  .cboxinner {
      width: 100%;
@@ -2731,7 +2735,11 @@ h3 {
   height: 2900px;
   width: 100%;
 }
-
+.introback {
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
 
 
 
