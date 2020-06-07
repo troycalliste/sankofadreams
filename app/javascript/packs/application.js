@@ -27,58 +27,58 @@ $(document).on("turbolinks:load", function() {
   const wbsix = document.getElementsByClassName("workbox")[5];
   const worklower = document.getElementsByClassName("worklower")[0];
 
-  $(wbone).hover(function() {
-      $( ".workbox" ).find( "h1" ).css("color", "rgba(255,255,255,.3)");
-      $( this ).find( "h1" ).css("color", "white");
-      $( worklower ).find( "h1" ).css("background-color", "red");
-
-    }, function() {
-      $( ".workbox" ).find( "h1" ).css("color", "white");
-      $( worklower ).find( "h1" ).css("background-color", "none");
-    });
-
-    $(wbtwo).hover(function() {
-        $( ".workbox" ).find( "h1" ).css("color", "rgba(255,255,255,.3)");
-        $( this ).find( "h1" ).css("color", "white");
-        $( worklower ).find( "h1" ).css("background-color", "blue");
-      }, function() {
-        $( ".workbox" ).find( "h1" ).css("color", "white");
-        $( worklower ).find( "h1" ).css("background-color", "none");
-      });
-
-
-      $(wbthree).hover(function() {
-          $( ".workbox" ).find( "h1" ).css("color", "rgba(255,255,255,.3)");
-          $( this ).find( "h1" ).css("color", "white");
-          $( worklower ).find( "h1" ).css("background-color", "yellow");
-        }, function() {
-          $( ".workbox" ).find( "h1" ).css("color", "white");
-          $( worklower ).find( "h1" ).css("background-color", "none");
-        });
-
-
-        $(wbfour).hover(function() {
-            $( ".workbox" ).find( "h1" ).css("color", "rgba(255,255,255,.3)");
-            $( this ).find( "h1" ).css("color", "white");
-          }, function() {
-            $( ".workbox" ).find( "h1" ).css("color", "white");
-          });
-
-
-          $(wbfive).hover(function() {
-              $( ".workbox" ).find( "h1" ).css("color", "rgba(255,255,255,.3)");
-              $( this ).find( "h1" ).css("color", "white");
-            }, function() {
-              $( ".workbox" ).find( "h1" ).css("color", "white");
-            });
-
-
-
-            $(wbsix).hover(function() {
-                $( ".workbox" ).find( "h1" ).css("color", "rgba(255,255,255,.3)");
-                $( this ).find( "h1" ).css("color", "white");
-              }, function() {
-                $( ".workbox" ).find( "h1" ).css("color", "white");
-              });
+  // $(wbone).hover(function() {
+  //     $( ".workbox" ).find( "h1" ).css("color", "rgba(255,255,255,.3)");
+  //     // $( this ).find( "h1" ).css("color", "white");
+  //     $( worklower ).css("background-image", "url(\"http://localhost:3000/assets/one-db0a7decf2c58d4c71f15962ea9dee54eecd73ee6758b78040d1666d081f7eb3.jpg\")");
+  //
+  //   }, function() {
+  //     $( ".workbox" ).find( "h1" ).css("color", "black");
+  //     $( worklower ).find( "h1" ).css("background-color", "none");
+  //   });
+  //
+  //   $(wbtwo).hover(function() {
+  //       $( ".workbox" ).find( "h1" ).css("color", "rgba(255,255,255,.3)");
+  //       $( this ).find( "h1" ).css("color", "white");
+  //       $( worklower ).find( "h1" ).css("background-color", "blue");
+  //     }, function() {
+  //       $( ".workbox" ).find( "h1" ).css("color", "white");
+  //       $( worklower ).find( "h1" ).css("background-color", "none");
+  //     });
+  //
+  //
+  //     $(wbthree).hover(function() {
+  //         $( ".workbox" ).find( "h1" ).css("color", "rgba(255,255,255,.3)");
+  //         $( this ).find( "h1" ).css("color", "white");
+  //         $( worklower ).find( "h1" ).css("background-color", "yellow");
+  //       }, function() {
+  //         $( ".workbox" ).find( "h1" ).css("color", "white");
+  //         $( worklower ).find( "h1" ).css("background-color", "none");
+  //       });
+  //
+  //
+  //       $(wbfour).hover(function() {
+  //           $( ".workbox" ).find( "h1" ).css("color", "rgba(255,255,255,.3)");
+  //           $( this ).find( "h1" ).css("color", "white");
+  //         }, function() {
+  //           $( ".workbox" ).find( "h1" ).css("color", "white");
+  //         });
+  //
+  //
+  //         $(wbfive).hover(function() {
+  //             $( ".workbox" ).find( "h1" ).css("color", "rgba(255,255,255,.3)");
+  //             $( this ).find( "h1" ).css("color", "white");
+  //           }, function() {
+  //             $( ".workbox" ).find( "h1" ).css("color", "white");
+  //           });
+  //
+  //
+  //
+  //           $(wbsix).hover(function() {
+  //               $( ".workbox" ).find( "h1" ).css("color", "rgba(255,255,255,.3)");
+  //               $( this ).find( "h1" ).css("color", "white");
+  //             }, function() {
+  //               $( ".workbox" ).find( "h1" ).css("color", "white");
+  //             });
 
 });

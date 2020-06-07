@@ -4,17 +4,17 @@
     <div class="navlimit">
       <div class="logowrap"><%= image_tag("sankofalogo.png") %></div>
       <ul class="navlist">
-        <li>Shop</li>
-        <li>Departments</li>
-        <li>Events</li>
-        <li>Contact</li>
+        <a href="#"><li>Shop</li></a>
+        <a href="/departments"><li>Departments</li></a>
+        <a href="#"><li>Events</li></a>
+        <a href="/contact"><li>Contact</li></a>
       </ul>
     </div>
   </div>
 
   <div class="mobilenav nov">
 
-    <div class="mobileimg"></div>
+    <div class="mobileimg"><%= image_tag("sankofalogo.png") %></div>
     <div class="mobileicon"><i class="fas fa-ellipsis-v"></i></div>
   </div>
 
@@ -36,17 +36,20 @@
 <div class="introback noov">
   <div class="introinner">
      <div class="deptbox">
-       <div class="insmalltitle"><p>VIEW OUR DEPARTMENTS</p></div>
+       <div class="insmalltitle"><p>Acquiring Resources</p></div>
        <div class="indeptbar"></div>
-       <div class="inlargetitle"><h3>We Believe in a Better Future.</h3>
+       <div class="inlargetitle"><h3>How To Get Ahead</h3>
        </div>
-       <div class="intexttitle"><p>Explore one of our many departments dedicated
-         to black education and financial literacy.</p>
+       <div class="intexttitle"><p><span class="italic">“If we expect to receive full equality and respect, we must
+         bring something of worth to the table, we must show up with possessions of value”.</span>
+         This can only be done by coming together as a community with ideas, aspirations, and
+         ambitions through our hearts and minds.
+       </p>
        </div>
      </div>
 
 
-     <div class="righttitle"><p>Our Other Section</p></div>
+     <div class="righttitle"><p>Philosophy of Wealth</p></div>
   </div>
 </div>
 
@@ -60,46 +63,50 @@
      <div class="cwleft">
        <div class="infintroinner">
           <div class="deptbox">
-            <div class="insmalltitle"><p>VIEW OUR DEPARTMENTS</p></div>
+            <div class="insmalltitle cwhite"><p>Working Through God</p></div>
             <div class="indeptbar"></div>
-            <div class="inlargetitle"><h3>We Believe in a Better Future.</h3>
+            <div class="inlargetitle cwhite"><h3>Facing Our Challenges</h3>
             </div>
-            <div class="intexttitle"><p>Explore one of our many departments dedicated
-              to black education and financial literacy.</p>
+            <div class="intexttitle cwhite"><p> <span class="italic">"And we know that all things work together
+              for good to them that love God, to them who
+              are called according to his purpose”</span> -Romans 8:28.
+              As a Black race, we must stop making excuses and playing the blame game.
+              We must use our challenges and tribulations as leverage to act on creating change. Development in Leadership, Innovation, Vision, Finances, Love, Respect, and most importantly, God.
+            </p>
             </div>
           </div>
        </div>
      </div>
      <div class="cwright">
        <div class="leftcardwrap">
-         <div class="cr cardone">
-           <div class="cardicon"></div>
+         <div class="cr cardone gre">
+           <div class="cardicon itwo"></div>
            <div class="cardtextlimit">
            <div class="cardtext">
              <h3>
-               the placement text is here
+               Trusting God
            </h3>
          </div>
          </div>
          </div>
-         <div class="cr cardtwo">
-           <div class="cardicon"></div>
+         <div class="cr cardtwo bro">
+           <div class="cardicon ione"></div>
            <div class="cardtextlimit">
            <div class="cardtext">
              <h3>
-               the placement text is here
+               Keeping Family Close
            </h3>
          </div>
          </div>
          </div>
        </div>
        <div class="rightcardwrap">
-         <div class="cr cardthree">
-           <div class="cardicon"></div>
+         <div class="cr cardthree pin">
+           <div class="cardicon ithree"></div>
            <div class="cardtextlimit">
            <div class="cardtext">
              <h3>
-               the placement text is here
+               Building Wealth
            </h3>
          </div>
          </div>
@@ -117,30 +124,31 @@
   <div class="wh workupper">
     <div class="workupperlimit">
     <div class="wrkintroinner">
-       <div class="deptbox">
-         <div class="insmalltitle"><p>VIEW OUR DEPARTMENTS</p></div>
-         <div class="indeptbar"></div>
-         <div class="inlargetitle"><h3>We Believe in a Better Future.</h3>
+       <div class="deptbox centall">
+         <div class="insmalltitle"><p>VIEW ALL SERVICES</p></div>
+         <div class="indeptbar cenm"></div>
+         <div class="inlargetitle"><h3>Our Many Services</h3>
          </div>
-         <div class="intexttitle"><p>Explore one of our many departments dedicated
-           to black education and financial literacy.</p>
+         <div class="intexttitle"><p>View all of our departments below to learn
+         more about how we can bring you closer to acheiving financial freedom. </p>
          </div>
        </div>
     </div>
-    <div class="workimg"></div>
     </div>
   </div>
   <div class="wh worklower">
     <div class="lwhigh">
-      <div class="workbox bordr"><h1>Department</h1></div>
-      <div class="workbox bordr"><h1>Department</h1></div>
-      <div class="workbox"><h1>Department</h1></div>
+      <a href="/business"><div class="workbox bordr oned">
+        <h1>Business</h1>
+      </div></a>
+      <a href="/counseling"><div class="workbox bordr twod"><h1>Counseling</h1></div></a>
+      <a href="/pharoahs"><div class="workbox bordr fived"><h1>Pharoahs</h1></div></a>
 
     </div>
     <div class="lwlow">
-      <div class="workbox bordr"><h1>Department</h1></div>
-      <div class="workbox bordr"><h1>Department</h1></div>
-      <div class="workbox"><h1>Department</h1></div>
+      <a href="/fitness"><div class="workbox bordr fourd"><h1>Fitness</h1></div></a>
+      <a href="/education"><div class="workbox threed"><h1>Education</h1></div></a>
+      <a href="/lifeplanning"><div class="workbox sixd"><h1>Life Planning</h1></div></a>
 
     </div>
   </div>

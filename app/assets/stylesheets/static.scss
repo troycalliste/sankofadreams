@@ -30,6 +30,7 @@ html, body {
 .navlimit {
   position: relative;
   width: 1200px;
+  min-width: 85%;
   height: 100%;
   margin: 0 auto;
 }
@@ -69,6 +70,15 @@ html, body {
   text-transform: uppercase;
   font-family: "cerabold", sans-serif;
 }
+.mobileimg {
+  position: relative;
+  width: 80px;
+  height: 100%;
+  margin: 0 auto;
+}
+.mobileimg img{
+  height: 100%;
+}
 ul {
     display: block;
     list-style-type: disc;
@@ -77,6 +87,10 @@ ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 0px;
+}
+.redbold {
+  color: red;
+  font-weight: bold;
 }
 .topback {
   width: 100%;
@@ -97,12 +111,11 @@ ul {
 
 }
 .tbupper {
-  font-family: sans-serif;
-  font-weight: bold;
+  font-family: "cerabold", sans-serif;
   font-size: 45px;
 }
 .tblower {
-  font-family: "Open Sans", sans-serif;
+  font-family: "cera", sans-serif;
   font-size: 24px;
 }
 .tbbase {
@@ -164,7 +177,7 @@ ul {
 .qone {
   position: relative;
   margin-top: 20px;
-  font-family: sans-serif;
+  font-family: "cera";
   font-size: 25px;
   text-transform: uppercase;
   color: white;
@@ -179,15 +192,26 @@ ul {
 .qtwo {
   position: relative;
   margin-top: 5px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "cera", sans-serif;
   font-size: 16px;
   color: orange;
   font-style: italic;
 }
+.rqtwo {
+  position: relative;
+  margin-top: 50px;
+  font-family: "cerabold", sans-serif;
+  font-size: 22px;
+  color: red;
+  font-style: italic;
+}
+.qitalic {
+  font-style: italic
+}
 .qthree {
   position: relative;
   margin-top: 30px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "cera", sans-serif;
   font-size: 16px;
   color: white;
 }
@@ -221,15 +245,14 @@ ul {
 .obone {
   height: 70px;
   width: 100%;
-  font-family: sans-serif;
-  font-weight: bold;
+  font-family: "cerabold", sans-serif;
   font-size: 35px;
   text-transform: uppercase;
   text-align: center;
 }
 .obone span {
   font-weight: normal;
-  font-family: "Open Sans", sans-serif;
+  font-family: "cera", sans-serif;
 }
 .obbar {
   width: 100px;
@@ -241,7 +264,7 @@ ul {
   font-size: 16px;
   width: 100%;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: "cera", sans-serif;
   height: auto;
 }
 .obtwo p {
@@ -252,7 +275,13 @@ ul {
   height: 900px;
   width: 100%;
 }
-
+.midlimit {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
  .midwrap {
    position: relative;
    height: 300px;
@@ -276,18 +305,18 @@ ul {
 
  }
  .obg {
- background-image: image-url("be2");
+ background-image: image-url("crowd.jpg");
  background-position: top;
 
  }
  .twbg {
- background-image: image-url("be3");
- background-position: 50% calc(50% + 100px);
+ background-image: image-url("be1");
+ // background-position: 50% calc(50% + 200px);
  float: right;
  }
  .thbg {
- background-image: image-url("be1");
- background-position: top;
+ background-image: image-url("family.jpg");
+ background-position: 50% calc(50% + 50px);
  }
 
  .halfcontain {
@@ -310,7 +339,7 @@ ul {
  }
  .halfone span {
    width: auto;
-   font-family: sans-serif;
+   font-family: "cera", sans-serif;
    font-weight: bold;
    font-size: 20px;
    text-transform: uppercase;
@@ -322,7 +351,10 @@ ul {
    height: 200px;
    width: 100px;
  }
-
+.italic {
+  font-style: italic;
+  font-weight: 600;
+}
  .fourback {
    position: relative;
    height: 400px;
@@ -389,7 +421,7 @@ ul {
    margin-top: 20px;
    height: 70px;
    width: 100%;
-   font-family: "Open Sans", sans-serif;
+   font-family: "cera", sans-serif;
    font-size: 16px;
  }
 .fourhead {
@@ -397,12 +429,12 @@ ul {
   top: 50px;
   width: 100%;
   height: 30px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "cera", sans-serif;
   font-size: 29px;
   color: white;
 }
 .fourhead span {
-  font-family: sans-serif;
+  font-family: "cerabold", sans-serif;
   font-size: 29px;
 }
 
@@ -412,8 +444,8 @@ ul {
   top: 80px;
   width: 100%;
   height: 130px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-family: "cera", sans-serif;
+  font-size: 21px;
   color: white;
 }
 .latestback {
@@ -433,7 +465,7 @@ box-shadow: 0px 15px 20px -20px rgba(0,0,0,0.75);
 .leadtext {
   position: relative;
   width: 100%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "cera", sans-serif;
   font-size: 40px;
   text-align: center;
 }
@@ -446,7 +478,7 @@ box-shadow: 0px 15px 20px -20px rgba(0,0,0,0.75);
 
 }
 .leadtext span {
-  font-weight: bold;
+  font-family: "cerabold", sans-serif;
   font-size: 39px;
 }
 .latestbox {
@@ -504,7 +536,7 @@ box-shadow: 0px 15px 20px -20px rgba(0,0,0,0.75);
  left: 50%;/*position X halfway in*/
 transform: translateX(-50%);
  bottom: -10px;
- font-family: "Open Sans", sans-serif;
+ font-family: "cera", sans-serif;
  font-size: 35px;
  color: white;
 }
@@ -513,7 +545,7 @@ transform: translateX(-50%);
   left: 50%;
   transform: translateX(-50%);
   top: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "cera", sans-serif;
   font-size: 25px;
   color: white;
 }
@@ -521,7 +553,7 @@ transform: translateX(-50%);
   position: relative;
   width: 100%;
   height: 90px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "cera", sans-serif;
   font-size: 30px;
   text-transform: uppercase;
   white-space: normal;
@@ -537,7 +569,7 @@ transform: translateX(-50%);
   position: relative;
   width: 100%;
   height: 290px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "cera", sans-serif;
   font-size: 15px;
   white-space: normal;
   line-height: 26px;
@@ -552,7 +584,7 @@ transform: translateX(-50%);
 
 }
 // .innertitlewrap h3 {
-//   font-family: "Open Sans", sans-serif;
+//   font-family: "cera", sans-serif;
 //   font-size: 34px;
 //   text-transform: uppercase;
 // }
@@ -621,7 +653,7 @@ transform: translateX(-50%);
 .fcb {
   height: 40px;
   width: 100%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "cera", sans-serif;
   font-size: 13px;
   font-weight: bold;
   color: white;
@@ -656,7 +688,7 @@ transform: translateX(-50%);
   -moz-transform: translateY(-45%);
   -ms-transform: translateY(-45%);
   -o-transform: translateY(-45%);
-  font-family: "Open Sans", sans-serif;
+  font-family: "cera", sans-serif;
   font-weight: bold;
   font-size: 14px;
 }
@@ -680,13 +712,15 @@ p {
 .deptback {
   position: relative;
   width: 100%;
-  background-color: black;
+  background-image: image-url("community.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 450px;
   min-height: 60vh;
 }
+
+
 .deptback .nav {
   background-color: rgba(255,255,255,.7);
 }
@@ -718,7 +752,7 @@ p {
 
 }
 .smalltitle p {
-  font-family: "cerabold";
+  font-family: "cerabold", sans-serif;
   font-size: 14px;
   color: white;
   letter-spacing: .15rem;
@@ -752,7 +786,7 @@ p {
 }
 
 .largetitle h3 {
-  font-family: "cerabold";
+  font-family: "cerabold", sans-serif;
   font-size: 2.5rem;
   color: white;
   display: block;
@@ -766,7 +800,7 @@ p {
   position: relative;
   height: 40px;
   width: 100%;
-  font-family: "cera";
+  font-family: "cera", sans-serif;
   font-size: 20px;
   color: white;
   line-height: 23px;
@@ -785,6 +819,7 @@ p {
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
+  filter: brightness(1.75);
 }
 .introback {
   position: relative;
@@ -820,7 +855,7 @@ p {
  margin-top: 15px;
 }
 .inlargetitle h3 {
-  font-family: "cerabold";
+  font-family: "cerabold", sans-serif;
   font-size: 1.8rem;
   color: black;
   display: block;
@@ -834,7 +869,7 @@ p {
   position: relative;
   height: 40px;
   width: 100%;
-  font-family: "cera";
+  font-family: "cera", sans-serif;
   font-size: 17px;
   color: black;
   line-height: 23px;
@@ -845,7 +880,7 @@ p {
   position: absolute;
   height: 20px;
   width: auto;
-  font-family: "cera";
+  font-family: "cera", sans-serif;
   font-size: 15px;
   right: 0;
   top: 0;
@@ -869,7 +904,10 @@ transform: translateY(-50%);
 -moz-transform: translateY(-50%);
 -ms-transform: translateY(-50%);
 -o-transform: translateY(-50%);
-background-color: pink;
+background-image: image-url("yellowg.jpg");
+background-position: left;
+background-size: cover;
+background-repeat: no-repeat;
 }
 .cardwrap {
 position: absolute;
@@ -953,6 +991,19 @@ width: 100%;
   width: 70px;
   border-radius: 50%;
   background-color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ione {
+ background-image: image-url("iconone.png");
+}
+.itwo {
+background-image: image-url("icontwo.png");
+}
+.ithree {
+background-image: image-url("iconthree.png");
 }
 .cardtextlimit {
   position: relative;
@@ -964,15 +1015,15 @@ width: 100%;
 }
 .cardtext {
   position: absolute;
-  left: 0;
+  left: 15px;
   bottom: 0;
-  width: 100%;
-  height: 150px;
+  width: 80%;
+  height: 100px;
 
 }
 .cardtext h3 {
   font-size: 30px;
-  font-family: "cerabold";
+  font-family: "cerabold", sans-serif;
   color: white;
 }
 .workback {
@@ -986,12 +1037,32 @@ width: 100%;
 }
 .workupper {
   background-color: white; /* For browsers that do not support gradients */
-  background-image: linear-gradient(#8DA48F, white);
+  // background-image: linear-gradient(#8DA48F, white);
   height: 40%;
 }
 .worklower {
+  position: relative;
   background-color: white;
   height: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: 1s all ease-in-out;
+  -webkit-transition: 1s all ease-in-out;
+  -moz-transition: 1s all ease-in-out;
+  -ms-transition: 1s all ease-in-out;
+  -o-transition: 1s all ease-in-out;
+}
+.worklower::before {
+  position: absolute;
+  content: ' ';
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rbga(0,0,0,0.3)
+
 }
 .infintroinner {
   position: relative;
@@ -1018,13 +1089,13 @@ width: 100%;
   position: absolute;
   width: 50%;
   height: auto;
-  left: 0;
+  left: 50%;
   top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 .workimg {
   position: absolute;
@@ -1038,6 +1109,11 @@ width: 100%;
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
+
+  background-image: image-url("building.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .lwhigh {
   position: relative;
@@ -1051,7 +1127,7 @@ width: 100%;
   width: 100%;
   height: 50%;
   // border-top: 1px solid rgba(255,255,255, 0.6);
-  border-top: 1px solid rgb(0,0, 0.6);
+
   // border-bottom: 1px solid rgba(255,255,255, 0.3);
   white-space: nowrap;
   margin-top:-4px;
@@ -1064,15 +1140,19 @@ width: 100%;
   margin: 0;
   margin-right:-4px;
 
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
 }
+
 .bordr {
   // border-right: 1px solid rgba(255,255,255, 0.6);
-  border-right: 1px solid rgb(0,0, 0.6);
+  // border-right: 1px solid rgb(0,0, 0.6);
 }
 .workbox h1 {
   text-align: center;
-  font-family: "cerabold";
-  color: black;
+  font-family: "cerabold", sans-serif;
+  color: white;
   font-size: 40px;
   margin-block-start: 0em;
   margin-block-end: 0em;
@@ -1081,6 +1161,10 @@ width: 100%;
   font-weight: bold;
   line-height: 330px;
   text-transform: uppercase;
+}
+.workbox h1:hover {
+  color: black;
+  cursor: pointer;
 }
 
 
@@ -1259,6 +1343,19 @@ width: 100%;
   height: 700px;
   width: 100%;
 }
+.cmainbacklg {
+  position: relative;
+  height: 2200px;
+  width: 100%;
+}
+.finul {
+  list-style: none;
+}
+.conesect {
+  position: relative;
+  margin-bottom: 100px;
+  height: auto;
+}
 .cmainbacklimit {
   position: absolute;
   height: auto;
@@ -1273,6 +1370,7 @@ width: 100%;
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
+
 .chightext {
   position: relative;
   height: auto;
@@ -1288,13 +1386,43 @@ width: 100%;
 .chightext p {
   font-size: 25px;
   font-weight: bold;
-  font-family: "cera";
+  font-family: "cera", sans-serif;
   line-height: 45px;
 }
-
+.smallerbold p {
+  font-size: 20px;
+  color: rbg(0,0,0.7);
+}
+.margbottom {
+  margin-bottom: 40px;
+}
+.xmargbottom {
+  margin-bottom: 70px;
+}
+.litemargbottom {
+  margin-bottom: 10px;
+}
+.red {
+  font-family: "cerabold";
+  color: #f8a88b;
+  font-size: 27px;
+}
+.bolditem {
+  font-family: "cerabold";
+  font-size: 24px;
+}
+.finulsm {
+  list-style: none;
+}
+.finul li {
+  margin-bottom: 100px;
+}
+.finulsm li {
+  margin-bottom: 15px;
+}
 .clowtext p {
   font-size: 20px;
-  font-family: "cera";
+  font-family: "cera", sans-serif;
   font-weight: lighter;
   line-height: 45px;
 }
@@ -1305,7 +1433,7 @@ width: 100%;
  margin-top: 15px;
 }
 .ctitle h3 {
-  font-family: "cerabold";
+  font-family: "cerabold", sans-serif;
   font-size: 30px;
 }
 .cbar {
@@ -1315,12 +1443,83 @@ width: 100%;
   margin-top: 10px;
 }
 
+.quoteback {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  background-color: #CC9E60;
+  margin-bottom: 170px;
+}
+.quotelimit {
+  position: relative;
+  height: auto;
+  width: 1500px;
+  max-width: 90%;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 
+}
+.quotelimit h1 {
+  font-family: "cerabold";
+  opacity: .7;
+  font-size: 50px;
+  font-style: italic;
+  margin-bottom: 50px;
+}
 .cotherback {
   position: relative;
   height: 1200px;
   width: 100%;
   background-color: #F5F5F6;
+}
+.financeimg {
+  height: 400px;
+  width: 100%;
+  background-image: image-url("fncpic.jpg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+.cnextback {
+  position: relative;
+  height: 1500px;
+  width: 100%;
+}
+.cnextlimit {
+  position: relative;
+  height: auto;
+  width: 900px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.largebook {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 0px;
+}
+.largebook img {
+  height: 100%;
+}
+.realred {
+  position: relative;
+  height: 20px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 70px;
+
+}
+.realred p{
+  font-size: 20px;
+  font-family: "cera";
+  color: red;
 }
 .cotherbacklimit {
   position: relative;
@@ -1351,7 +1550,7 @@ width: 100%;
 }
 .ctitlehead h3 {
   font-size: 30px;
-  font-family: "cera";
+  font-family: "cera", sans-serif;
   margin-block-start: 0em;
   margin-block-end: 0em;
 }
@@ -1393,7 +1592,6 @@ width: 100%;
  width: 100%;
  left: 0;
  top: 0;
- background-color: black;
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
@@ -1453,7 +1651,7 @@ width: 100%;
   padding: 6px 0;
 }
 .ccaptionhead h3 {
-  font-family: "cerabold";
+  font-family: "cerabold", sans-serif;
   font-size: 24px;
 }
 .ccaptiontext {
@@ -1461,7 +1659,7 @@ width: 100%;
   width: 100%;
 }
 .ccaptiontext p {
-  font-family: "cera";
+  font-family: "cera", sans-serif;
   font-size: 16px;
 }
 
@@ -1483,19 +1681,62 @@ width: 100%;
 }
 .ccaptionbtn a {
   line-height: 70px;
-  font-family: "cera";
+  font-family: "cera", sans-serif;
   font-size: 25px;
   text-decoration: none;
   color: black;
 }
+.abackg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.one {
+  background-image: image-url("one.jpg");
+}
+.two{
+  background-image: image-url("two.jpeg");
+}
+.three{
+  background-image: image-url("three.png");
+}
+.four {
+  background-image: image-url("four.jpg");
+}
+.five {
+  background-image: image-url("five.jpg");
+}
+.six {
+  background-image: image-url("six.jpeg");
+}
 
 
+
+.oned {
+  background-image: image-url("onedark.jpg");
+}
+.twod {
+  background-image: image-url("twodark.jpg");
+}
+.threed {
+  background-image: image-url("threedark.jpg");
+}
+.fourd {
+  background-image: image-url("fourdark.jpg");
+}
+.fived {
+  background-image: image-url("fivedark.jpg");
+}
+.sixd {
+  background-image: image-url("sixdark.jpg");
+}
 
 .cviewall {
   position: absolute;
   padding: 25px 90px;
   border: 1px solid black;
-  font-family: "cera";
+  font-family: "cera", sans-serif;
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
@@ -1572,7 +1813,7 @@ width: 100%;
 }
 .formtext {
   margin-top: 22px;
-  font-family: "cera";
+  font-family: "cera", sans-serif;
   font-size: 16px;
   color: #2A2A2A;
 
@@ -1624,7 +1865,7 @@ margin-top: 5px;
   color: black;
 }
 .forminfotext p {
-  font-family: "cera";
+  font-family: "cera", sans-serif;
   font-size: 17px;
   line-height: 30px;
   color: #6D6D6D;
@@ -1692,6 +1933,9 @@ h3 {
     height: 100%;
     float: none;
  }
+ .logowrap {
+    left: 50px;
+}
  .firstblock {
    display: block;
  }
@@ -1700,7 +1944,13 @@ h3 {
  }
 
 
-
+ .quotelimit h1 {
+   font-family: "cerabold";
+   opacity: .7;
+   font-size: 40px;
+   font-style: italic;
+   margin-bottom: 50px;
+ }
 }
 
 @media (max-width: 1100px) {
@@ -1805,6 +2055,18 @@ h3 {
       border-radius: 50%;
       background-color: white;
       margin-bottom: 20px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  .ione {
+   background-image: image-url("iconone.png");
+  }
+  .itwo {
+  background-image: image-url("icontwo.png");
+  }
+  .ithree {
+  background-image: image-url("iconthree.png");
   }
   .cardtext {
     position: relative;
@@ -1853,6 +2115,8 @@ h3 {
  .worklower {
     background-color: white;
     height: 1000px;
+
+
 }
  .workimg {
    display: none;
@@ -1861,7 +2125,7 @@ h3 {
      position: relative;
      width: 100%;
      height: 500px;
-     border-top: 1px solid rgba(255, 255, 255, 0.3);
+     // border-top: 1px solid rgba(255, 255, 255, 0.3);
      white-space: nowrap;
  }
  .lwlow {
@@ -1873,13 +2137,13 @@ h3 {
     position: relative;
     width: 50%;
     height: auto;
-    left: 0;
+    left: 50%;
     top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
     margin: 0 auto;
 }
 .workbox {
@@ -2240,8 +2504,23 @@ h3 {
     height: 900px;
     width: 100%;
 }
-
-
+.cmainbacklg {
+  position: relative;
+  height: 2500px;
+  width: 100%;
+}
+.cnextback {
+  position: relative;
+  height: 1900px;
+  width: 100%;
+}
+.quotelimit h1 {
+  font-family: "cerabold";
+  opacity: .7;
+  font-size: 30px;
+  font-style: italic;
+  margin-bottom: 50px;
+}
 
 
 
@@ -2329,7 +2608,7 @@ h3 {
     font-size: 35px;
 }
 .tblower {
-    font-family: "Open Sans", sans-serif;
+    font-family: "cera", sans-serif;
     font-size: 20px;
 }
 .topbackcontent {
@@ -2412,12 +2691,18 @@ h3 {
       position: absolute;
       padding: 25px 90px;
       border: 1px solid black;
-      font-family: "cera";
+      font-family: "cera", sans-serif;
       font-size: 16px;
       font-weight: bold;
     }
 
-
+    .quotelimit h1 {
+      font-family: "cerabold";
+      opacity: .7;
+      font-size: 24px;
+      font-style: italic;
+      margin-bottom: 50px;
+    }
 }
 
 
@@ -2432,7 +2717,7 @@ h3 {
 .cardtext h3 {
     padding-top: 20px;
     font-size: 22px;
-    font-family: "cerabold";
+    font-family: "cerabold", sans-serif;
     color: white;
 }
 
@@ -2440,6 +2725,11 @@ h3 {
     position: relative;
     height: 1200px;
     width: 100%;
+}
+.cmainbacklg {
+  position: relative;
+  height: 2900px;
+  width: 100%;
 }
 
 
@@ -2452,6 +2742,12 @@ h3 {
 position: absolute;
 width: 100%;
 height: 50%;
+}
+
+.cnextback {
+  position: relative;
+  height: 2100px;
+  width: 100%;
 }
 }
 
@@ -2474,6 +2770,12 @@ height: 50%;
     letter-spacing: 1px;
 }
 
+.cnextback {
+  position: relative;
+  height: 2300px;
+  width: 100%;
+}
+
 }
 @media (max-width: 345px) {
   .fourhead {
@@ -2486,8 +2788,38 @@ height: 50%;
   }
 
 
+  .cmainbacklg {
+    position: relative;
+    height: 3100px;
+    width: 100%;
+  }
+
 }
-
-
-
+.gre {
+  background-color: #82A98D;
+}
+.bro {
+    background-color: #A98F82
+}
+.pin {
+background-color: #8EAED3
+}
+.cwhite p {
+  color: white;
+}
+.cwhite h3 {
+  color: white;
+}
+.centall {
+  text-align: center;
+}
+.centall .insmalltitle {
+  margin-bottom: 20px;
+}
+.cenm {
+  margin: 0 auto;
+}
+.ofc {
+  background-image: image-url("office.jpg")
+}
 // end

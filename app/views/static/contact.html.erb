@@ -5,20 +5,20 @@
     <div class="navlimit">
       <div class="logowrap"><%= image_tag("sankofalogo.png") %></div>
       <ul class="navlist">
-        <li>Shop</li>
-        <li>Departments</li>
-        <li>Events</li>
-        <li>Contact</li>
+        <a href="#"><li>Shop</li></a>
+        <a href="/departments"><li>Departments</li></a>
+        <a href="#"><li>Events</li></a>
+        <a href="/contact"><li>Contact</li></a>
       </ul>
     </div>
   </div>
 
   <div class="mobilenav">
-  <div class="mobileimg"></div>
+  <div class="mobileimg"><%= image_tag("sankofalogo.png") %></div>
   <div class="mobileicon"><i class="fas fa-ellipsis-v"></i></div>
 </div>
 
-<div class="deptback noov">
+<div class="deptback noov ofc">
   <div class="deptinner">
      <div class="deptbox">
        <div class="smalltitle"><p>Contact Us</p></div>
@@ -56,7 +56,7 @@
         <%= form.text_area :message, class: "formsect", required: "required" %>
         </div>
         <button type="submit" class="inqbtn">
-           <i class="far fa-file-alt"></i> &nbsp;&nbsp;CONTACT US 
+           <i class="far fa-file-alt"></i> &nbsp;&nbsp;CONTACT US
         </button>
         <% end %>
       </div>
