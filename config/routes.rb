@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get "/contact", to: "static#contact"
   get "/business", to: "static#business"
   get "/education", to: "static#education"
-  get "/fitness", to: "static#fitness"
+  get "/health", to: "static#health"
   get "/pharoahs", to: "static#pharoahs"
   get "/lifeplanning", to: "static#lifeplanning"
 end

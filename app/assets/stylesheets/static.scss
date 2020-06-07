@@ -22,7 +22,7 @@ html, body {
 }
 .nav {
   position: relative;
-  height: 100px;
+  height: 110px;
   width: 100%;
   // background-color: rgba(0, 0, 0, 0.5);
   background-color: white;
@@ -52,6 +52,7 @@ html, body {
   -o-transform: translateY(-50%);
   width: 200px;
   height: 95%;
+
 }
 .logowrap img{
   position: relative;
@@ -78,6 +79,11 @@ html, body {
   width: 80px;
   height: 100%;
   margin: 0 auto;
+  transform: translateX(-12%);
+  -webkit-transform: translateX(-12%);
+  -moz-transform: translateX(-12%);
+  -ms-transform: translateX(-12%);
+  -o-transform: translateX(-12%);
 }
 .mobileimg img{
   height: 100%;
@@ -163,7 +169,7 @@ ul {
   float: left;
   width: 45%;
   height: 100%;
-  background-image: image-url("harriet.jpg");
+  background-image: image-url("burke.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -1316,10 +1322,32 @@ background-repeat: no-repeat;
   text-align: center;
   line-height: 224px;
 }
+.alt {
+  position: relative;
+  width: 900px;
+  max-width: 90%;
+  white-space: nowrap;
+  height: 100%;
+  // background-color: blue;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 224px;
+}
 .csupperhalflimit h1 {
   color: rgb(0,0,0);
   text-transform: uppercase;
   font-size: 80px;
+  letter-spacing: 6px;
+  font-family: "cera", sans-serif;
+  font-weight: bold;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  opacity: .8;
+}
+.alt h1 {
+  color: rgb(0,0,0);
+  text-transform: uppercase;
+  font-size: 70px;
   letter-spacing: 6px;
   font-family: "cera", sans-serif;
   font-weight: bold;
@@ -1922,6 +1950,10 @@ h3 {
 .deptbox {
     position: relative;
     width: 100%;
+   }
+
+   .alt h1 {
+     font-size: 40px;
    }
   }
 
@@ -2560,6 +2592,9 @@ h3 {
     font-size: 60px;
     letter-spacing: 3px;
 }
+.alt h1 {
+  font-size: 30px;
+}
 .csupperhalf {
    top: 110px;
 }
@@ -2646,6 +2681,9 @@ h3 {
  .csupperhalflimit h1 {
      font-size: 50px;
      letter-spacing: 1px;
+ }
+ .alt h1 {
+   font-size: 25px;
  }
  .csupperhalf {
 
@@ -2801,7 +2839,9 @@ h3 {
 }
 
 
-
+.alt h1 {
+  font-size: 20px;
+}
 }
 
 
@@ -2836,7 +2876,9 @@ height: 50%;
     font-size: 40px;
     letter-spacing: 1px;
 }
-
+.alt h1 {
+  font-size: 15px;
+}
 .cnextback {
   position: relative;
   height: 2300px;
