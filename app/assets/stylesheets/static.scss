@@ -1914,6 +1914,9 @@ h3 {
 .nov {
   overflow: hidden;
 }
+.mobilego {
+  display: none;
+}
 ////////////////////////////////////////////////mobile
 @media (max-width: 1300px) {
 .deptbox {
@@ -2246,6 +2249,9 @@ h3 {
   .nav {
     display: none;
   }
+  .cnav {
+    display: none;
+  }
   .righttitle {
     display: none;
   }
@@ -2469,7 +2475,58 @@ h3 {
     -o-transform: translateY(-50%);
 }
 
+.mobilego {
+  position: fixed;
+  display: block;
+  background-color: white;
+  height: 100%;
+  width: 310px;
+  top: 0;
+  left: -100%;
+  transition: left 1s ease;
+  z-index: 12;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: white;
+  border-right: .5px solid black;
 
+}
+.item {
+  width: 100%;
+  height: 90px;
+  border-bottom: .9px solid lightgray;
+  font-size: 16px;
+  font-family: "Lato", arial, sans-serif;
+  // text-align: center;
+  line-height: 90px;
+  color: white;
+  z-index: 0;
+}
+.ml {
+  margin-left: 30px;
+}
+.ml a {
+  text-decoration: none;
+  color: white;
+}
+.ml a:visited {
+  color: white;
+}
+.mlclose {
+  position: absolute;
+  right: 15px;
+}
+
+.dark {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity .5s ease-in-out;
+}
 
 }
 
