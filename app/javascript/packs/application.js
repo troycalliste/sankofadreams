@@ -26,7 +26,30 @@ $(document).on("turbolinks:load", function() {
   const wbfive = document.getElementsByClassName("workbox")[4];
   const wbsix = document.getElementsByClassName("workbox")[5];
   const worklower = document.getElementsByClassName("worklower")[0];
+  const menu = document.getElementsByClassName("mobilego")[0];
+  const close = document.getElementsByClassName("mlclose")[0];
+  const menubtn = document.getElementsByClassName("mobileicon")[0];
 
+
+
+  if (close != undefined) { close.addEventListener('click', hideMen, false); }
+    if (menubtn != undefined) { menubtn.addEventListener('click', showMen, false); }
+
+  function showMen() {
+ menu.style.left = "0";
+ dark.style.opacity = ".4";
+ dark.style.zIndex = "3";
+ dark.addEventListener('click', hideMen, false);
+}
+ function hideMen() {
+ menu.style.left = "-100%";
+ dark.style.opacity = "0";
+
+ setTimeout(function() {
+  dark.style.zIndex = "-1";
+ }, 500);
+
+}
   // $(wbone).hover(function() {
   //     $( ".workbox" ).find( "h1" ).css("color", "rgba(255,255,255,.3)");
   //     // $( this ).find( "h1" ).css("color", "white");

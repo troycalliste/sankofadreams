@@ -6,12 +6,20 @@
     <div class="navlimit">
       <a href="/"><div class="logowrap"><%= image_tag("sankofalogo.png") %></div></a>
       <ul class="navlist">
-        <a href="#"><li>Shop</li></a>
+        <a href="/"><li>Home</li></a>
         <a href="/departments"><li>Departments</li></a>
         <a href="#"><li>Events</li></a>
         <a href="/contact"><li>Contact</li></a>
       </ul>
     </div>
+  </div>
+  <div class="mobilego">
+    <div class="item"><span class="mlclose"><i class="fas fa-times"></i>&nbsp</span></div>
+    <div class="item"> <span class="ml"><%= link_to "Welcome", "/" %></span></div>
+    <div class="item"> <span class="ml"><%= link_to "Shop", "#" %></span></div>
+    <div class="item"> <span class="ml ab"><%= link_to "Departments", "/services" %></span></div>
+    <div class="item"> <span class="ml"><%= link_to "Events", "/about" %></span></div>
+    <div class="item"> <span class="ml"><%= link_to "Contact", "/contact" %></span></div>
   </div>
 
   <div class="mobilenav nov">
