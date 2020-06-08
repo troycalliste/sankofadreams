@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get "/health", to: "static#health"
   get "/pharoahs", to: "static#pharoahs"
   get "/lifeplanning", to: "static#lifeplanning"
+  get "/comingsoon", to: "static#comingsoon"
 end
