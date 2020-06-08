@@ -31,7 +31,7 @@ class InquiriesController < ApplicationController
       name = @inquiry.name
       email = @inquiry.email
       subject = @inquiry.subject
-      message = @inquiry.messages
+      message = @inquiry.message
 
       InquiryMailer.with(inquiry: @inquiry).inquiry_notification(name, email, subject, message).deliver_later
       format.html { redirect_to "/rdrct-submit"}
