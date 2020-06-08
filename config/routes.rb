@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   get "/pharoahs", to: "static#pharoahs"
   get "/lifeplanning", to: "static#lifeplanning"
   get "/comingsoon", to: "static#comingsoon"
+  get "/rdrct-submit", to: "static#redirect"
 end
