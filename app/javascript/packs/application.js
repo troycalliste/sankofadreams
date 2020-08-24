@@ -29,8 +29,8 @@ $(document).on("turbolinks:load", function() {
   const menu = document.getElementsByClassName("mobilego")[0];
   const close = document.getElementsByClassName("mlclose")[0];
   const menubtn = document.getElementsByClassName("mobileicon")[0];
-
-
+  const local = document.getElementsByClassName("local")[0];
+  const vfstretch = document.getElementsByClassName("vfstretch")[0];
 
   if (close != undefined) { close.addEventListener('click', hideMen, false); }
     if (menubtn != undefined) { menubtn.addEventListener('click', showMen, false); }
@@ -44,12 +44,84 @@ $(document).on("turbolinks:load", function() {
  function hideMen() {
  menu.style.left = "-100%";
  dark.style.opacity = "0";
-
  setTimeout(function() {
   dark.style.zIndex = "-1";
  }, 500);
 
 }
+
+
+
+$(".leftb").click(function(){
+  vfleft = parseInt($(vfstretch).css("left"), 10);
+  wid = document.getElementsByClassName("vfstretch")[0].offsetWidth
+  shft = wid / 3
+  // sub = (shft * 2) * (-1)
+  sub = shft
+  subtwo = shft * 2
+  msub = Math.round(-Math.abs(sub))
+  msubtwo = Math.round(-Math.abs(subtwo))
+  msubtwop = Math.round(-Math.abs(subtwo)) + 1
+  msubp = Math.round(-Math.abs(sub)) + 1
+  // console.log(msub)
+  console.log("vfleft = " + vfleft)
+  console.log("sub = " + msub)
+  console.log("subtwo = " + msubtwo)
+
+  if ((vfleft == msubtwo) || (vfleft == msubtwop)) {
+    wid = document.getElementsByClassName("vfstretch")[0].offsetWidth
+    shft = wid / 3
+    vfleft = parseInt($(vfstretch).css("left"), 10);
+    vfshift = (vfleft + shft)
+    $(vfstretch).css("left", vfshift + "px")
+  }
+  if ((vfleft == msub) || (vfleft == msubp)) {
+    wid = document.getElementsByClassName("vfstretch")[0].offsetWidth
+    shft = wid / 3
+    vfleft = parseInt($(vfstretch).css("left"), 10);
+    vfshift = (vfleft + shft)
+    $(vfstretch).css("left", 0 + "px")
+  }
+})
+
+
+
+
+$(".rightb").click(function(){
+  vfleft = parseInt($(vfstretch).css("left"), 10);
+  wid = document.getElementsByClassName("vfstretch")[0].offsetWidth
+  shft = wid / 3
+  // sub = (shft * 2) * (-1)
+  sub = shft * 1
+  msub = Math.round(-Math.abs(sub))
+  msubp = Math.round(-Math.abs(sub)) + 1
+// console.log(msub)
+console.log("vfleft = " + vfleft)
+console.log("sub = " + msub)
+  if ((vfleft == 1) || (vfleft == 0) || (vfleft == msub) || (vfleft == msubp)) {
+    // console.log("vfleft = " + vfleft)
+    // console.log("sub = " + msub)
+    wid = document.getElementsByClassName("vfstretch")[0].offsetWidth
+    shft = wid / 3
+    vfleft = parseInt($(vfstretch).css("left"), 10);
+    vfshift = (vfleft - shft)
+    $(vfstretch).css("left", vfshift + "px")
+  }
+})
+
+
+// $(".local").click(function(){
+// // vfstretch = document.getElementsByClassName("vfstretch")[0];
+//   wid = document.getElementsByClassName("vfstretch")[0].offsetWidth
+//   shft = wid / 3
+//   vfleft = parseInt($(vfstretch).css("left"), 10);
+//   vfshift = (vfleft - shft)
+//   // $()
+//   // console.log(vfleft);
+//   // console.log(vfshift);
+// })
+
+
   // $(wbone).hover(function() {
   //     $( ".workbox" ).find( "h1" ).css("color", "rgba(255,255,255,.3)");
   //     // $( this ).find( "h1" ).css("color", "white");
